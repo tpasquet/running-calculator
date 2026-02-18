@@ -1,0 +1,69 @@
+.zone-card {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+
+  &__bar {
+    width: 5px;
+    flex-shrink: 0;
+    background: var(--zone-color);
+  }
+
+  &__content {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  &__percent {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--zone-color);
+    white-space: nowrap;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-top: 0.25rem;
+  }
+
+  &__stat {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    font-variant-numeric: tabular-nums;
+
+    &--muted {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--color-text-secondary);
+    }
+  }
+}

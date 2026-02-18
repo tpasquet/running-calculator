@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta -->
+    <title>Running Calculator — Pace, Split Times, Training Zones & Performance Prediction</title>
+    <meta name="description" content="Free running calculator: convert pace and speed, calculate split times, training zones from MAS/VMA, and predict race performances with Jack Daniels and Riegel models. Works offline as a PWA." />
+    <meta name="keywords" content="running calculator, pace converter, split times, training zones, VMA, MAS, Jack Daniels VDOT, Riegel formula, race prediction, running pace, km/h to min/km" />
+    <meta name="author" content="Running Calculator" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://running-calculator.app/" />
+
+    <!-- Hreflang for bilingual support -->
+    <link rel="alternate" hreflang="en" href="https://running-calculator.app/" />
+    <link rel="alternate" hreflang="fr" href="https://running-calculator.app/fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://running-calculator.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Running Calculator" />
+    <meta property="og:title" content="Running Calculator — Pace, Split Times, Training Zones & Performance Prediction" />
+    <meta property="og:description" content="Free running calculator: convert pace and speed, calculate split times, training zones from MAS/VMA, and predict race performances. Available offline as a PWA." />
+    <meta property="og:url" content="https://running-calculator.app/" />
+    <meta property="og:image" content="https://running-calculator.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Running Calculator app screenshot" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Running Calculator — Pace, Split Times, Training Zones & Performance Prediction" />
+    <meta name="twitter:description" content="Free running calculator: pace converter, split times, training zones from MAS/VMA, race prediction (Jack Daniels, Riegel). Works offline." />
+    <meta name="twitter:image" content="https://running-calculator.app/og-image.png" />
+    <meta name="twitter:image:alt" content="Running Calculator app screenshot" />
+
+    <!-- PWA & icons -->
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="RunCalc" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Running Calculator",
+      "url": "https://running-calculator.app/",
+      "description": "Free running calculator: pace and speed converter, split time calculator, training zones from MAS/VMA, and race performance prediction using Jack Daniels VDOT and Riegel models.",
+      "applicationCategory": "SportsApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Pace and speed converter (km/h, mph, min/km, min/mile)",
+        "Split time calculator (by pace, MAS percentage, target time)",
+        "Training zones calculator from MAS/VMA",
+        "Race performance prediction (Jack Daniels VDOT, Riegel formula)",
+        "Offline support (PWA)",
+        "English and French interface"
+      ],
+      "inLanguage": ["en", "fr"],
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "screenshot": "https://running-calculator.app/og-image.png"
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

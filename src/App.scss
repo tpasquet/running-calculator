@@ -1,0 +1,45 @@
+.app-nav {
+  display: flex;
+  border-bottom: 2px solid var(--color-border);
+  background: var(--color-surface);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__item {
+    flex: 1;
+    padding: 0.875rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+
+    &--active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    &:hover:not(&--active) {
+      color: var(--color-text);
+    }
+
+    &--icon {
+      flex: 0 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.app {
+  min-height: calc(100vh - 49px - 80px); // nav + approx footer height
+  padding: 1rem 1rem 2rem;
+  box-sizing: border-box;
+}

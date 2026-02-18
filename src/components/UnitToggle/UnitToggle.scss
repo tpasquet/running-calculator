@@ -1,0 +1,32 @@
+.unit-toggle {
+  display: inline-flex;
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  &__option {
+    flex: 1;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: inherit;
+    border: none;
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+
+    &:not(:last-child) {
+      border-right: 2px solid var(--color-border);
+    }
+
+    &--active {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    &:hover:not(&--active) {
+      background: var(--color-surface-hover);
+    }
+  }
+}

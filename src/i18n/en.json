@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "paceSpeed": "Pace / Speed",
+    "splitTimes": "Split Times",
+    "zones": "Zones",
+    "prediction": "Prediction",
+    "settingsAriaLabel": "Settings"
+  },
+  "paceSpeed": {
+    "title": "Pace / Speed",
+    "sectionPaceToSpeed": "Pace → Speed",
+    "paceLabel": "Pace ({{unit}})",
+    "pacePlaceholder": "mm:ss",
+    "paceHint": "Format: mm:ss",
+    "speedLabel": "Speed",
+    "sectionSpeedToPace": "Speed → Pace",
+    "speedInputLabel": "Speed ({{unit}})",
+    "speedPlaceholder": "e.g. 12.5",
+    "paceResultLabel": "Pace"
+  },
+  "splitTimes": {
+    "title": "Split Times",
+    "tabByPace": "By Pace",
+    "tabByMas": "By MAS %",
+    "tabByTarget": "By Target",
+    "paceLabel": "Pace ({{unit}})",
+    "pacePlaceholder": "mm:ss",
+    "paceHint": "Format: mm:ss",
+    "masLabel": "MAS / VMA (km/h)",
+    "masPlaceholder": "e.g. 16",
+    "masPercentLabel": "% of MAS",
+    "masPercentPlaceholder": "e.g. 100",
+    "masPercentHint": "Typical: 60–100%",
+    "distanceLabel": "Distance",
+    "targetTimeLabel": "Target time",
+    "targetTimePlaceholder": "hh:mm:ss or mm:ss",
+    "targetTimeHint": "Format: hh:mm:ss or mm:ss",
+    "equivalentPace": "Equivalent pace:"
+  },
+  "trainingZones": {
+    "title": "Training Zones",
+    "masLabel": "MAS / VMA (km/h)",
+    "masPlaceholder": "e.g. 16",
+    "masHint": "Your Maximal Aerobic Speed in km/h",
+    "emptyState": "Enter your MAS above to calculate your training zones."
+  },
+  "perfPrediction": {
+    "title": "Performance Prediction",
+    "modelDanielsLabel": "Jack Daniels",
+    "modelDanielsDescription": "VDOT formula — physiologically grounded, based on VO₂max & running economy.",
+    "modelRiegelLabel": "Riegel",
+    "modelRiegelDescription": "Power-law formula T2 = T1 × (D2/D1)^1.06 — simple and widely used.",
+    "referenceDistanceLabel": "Reference distance",
+    "raceTimeLabel": "Race time",
+    "raceTimePlaceholder": "hh:mm:ss or mm:ss",
+    "raceTimeHint": "Format: hh:mm:ss or mm:ss",
+    "vdotLabel": "VDOT"
+  },
+  "settings": {
+    "title": "Settings",
+    "languageSection": "Language",
+    "unitSection": "Unit of measure",
+    "unitKilometers": "Kilometers (km)",
+    "unitMiles": "Miles (mi)",
+    "masSection": "Reference MAS / VMA",
+    "masLabel": "MAS (km/h)",
+    "masPlaceholder": "e.g. 16",
+    "masHint": "Your Maximal Aerobic Speed — used as default in Training Zones and Split Times.",
+    "masSaved": "Saved: {{mas}} km/h",
+    "themeSection": "Appearance",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System",
+    "refPerfSection": "Reference performance",
+    "refPerfHint": "Used to pre-fill the Performance Prediction page.",
+    "refPerfDistanceLabel": "Race distance",
+    "refPerfTimeLabel": "Race time",
+    "refPerfTimePlaceholder": "hh:mm:ss or mm:ss",
+    "refPerfTimeHint": "Format: hh:mm:ss or mm:ss",
+    "refPerfSaved": "Saved: {{distance}} in {{time}}"
+  },
+  "splitTable": {
+    "emptyState": "Enter values above to see split times.",
+    "colDistance": "Distance",
+    "colTime": "Time",
+    "colPace": "Pace ({{unit}})"
+  },
+  "predictionTable": {
+    "emptyState": "Enter a reference performance above to see predictions.",
+    "colDistance": "Distance",
+    "colPredictedTime": "Predicted time",
+    "colPace": "Pace ({{unit}})",
+    "refBadge": "ref"
+  },
+  "zoneCard": {
+    "masPercent": "{{min}}–{{max}}% MAS"
+  },
+  "footer": {
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookies": "Cookie Policy",
+    "copyright": "© {{year}} Running Calculator"
+  },
+  "cookieBanner": {
+    "message": "We use cookies to save your preferences (language, unit, MAS) locally on your device. No tracking or advertising cookies are used.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "learnMore": "Learn more"
+  },
+  "legal": {
+    "noticeTitle": "Legal Notice",
+    "noticeSite": "Site",
+    "noticePublisher": "Publisher",
+    "noticePublisherValue": "Running Calculator — independent project",
+    "noticeHost": "Hosting",
+    "noticeHostValue": "Static hosting (CDN)",
+    "noticeContact": "Contact",
+    "noticeContactValue": "See Privacy Policy",
+    "privacyTitle": "Privacy Policy",
+    "privacyIntro": "Running Calculator is committed to protecting your privacy.",
+    "privacyDataTitle": "Data collected",
+    "privacyDataBody": "This site does not collect any personal data. Your preferences (language, unit, MAS) are stored exclusively in your browser's localStorage and never transmitted to any server.",
+    "privacyCookiesTitle": "Cookies",
+    "privacyCookiesBody": "We use functional cookies to save your preferences and, with your consent, Google Analytics cookies to measure audience (anonymised data, no advertising use).",
+    "privacyThirdTitle": "Third parties",
+    "privacyThirdBody": "If you accept cookies, anonymised usage data is shared with Google Analytics (Google LLC, USA). No data is shared with any other third party. Google Analytics is configured with IP anonymisation enabled and advertising signals disabled.",
+    "privacyRightsTitle": "Your rights",
+    "privacyRightsBody": "You can delete your stored preferences at any time by clearing your browser's localStorage or using the browser's developer tools.",
+    "termsTitle": "Terms of Use",
+    "termsIntro": "By using Running Calculator, you agree to the following terms.",
+    "termsServiceTitle": "Service",
+    "termsServiceBody": "Running Calculator provides running tools (pace converter, split times, training zones, performance prediction) free of charge. Calculations are provided for informational purposes only and do not constitute medical or professional coaching advice.",
+    "termsAccuracyTitle": "Accuracy",
+    "termsAccuracyBody": "Prediction models (Jack Daniels VDOT, Riegel) are based on scientific formulas but results may differ from actual performance. Always listen to your body.",
+    "termsAvailabilityTitle": "Availability",
+    "termsAvailabilityBody": "The service is provided as-is, without any guarantee of uptime or continuity.",
+    "cookiesTitle": "Cookie Policy",
+    "cookiesIntro": "This policy explains how Running Calculator uses cookies and similar browser storage.",
+    "cookiesWhatTitle": "What we store",
+    "cookiesWhatBody": "We store a single item in localStorage under the key 'running-calculator:settings' containing your language, unit preference, and MAS value. This data never leaves your device.",
+    "cookiesControlTitle": "Your control",
+    "cookiesControlBody": "You can decline storage at any time using the cookie banner. You can also clear stored data via your browser settings (Application → Local Storage).",
+    "cookiesAnalyticsTitle": "Google Analytics",
+    "cookiesAnalyticsBody": "With your consent, we use Google Analytics 4 to measure audience anonymously (pages visited, session duration). IP anonymisation is enabled. This data is transmitted to Google LLC (USA) and is subject to Google's privacy policy. No advertising use is made of this data.",
+    "cookiesNoTrackTitle": "Advertising",
+    "cookiesNoTrackBody": "We do not use any advertising or retargeting cookies."
+  },
+  "zones": {
+    "zone1": {
+      "name": "Zone 1 — Recovery",
+      "description": "Very easy effort. Active recovery, warm-up, cool-down."
+    },
+    "zone2": {
+      "name": "Zone 2 — Aerobic",
+      "description": "Comfortable conversational pace. Builds aerobic base."
+    },
+    "zone3": {
+      "name": "Zone 3 — Tempo",
+      "description": "Comfortably hard. Improves lactate threshold."
+    },
+    "zone4": {
+      "name": "Zone 4 — Threshold",
+      "description": "Hard effort. Race-pace for long distances."
+    },
+    "zone5": {
+      "name": "Zone 5 — VO2max",
+      "description": "Very hard. Develops maximal aerobic capacity."
+    }
+  }
+}

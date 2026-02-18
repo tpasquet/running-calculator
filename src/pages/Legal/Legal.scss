@@ -1,0 +1,42 @@
+.legal {
+  max-width: 680px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--color-text);
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    color: var(--color-text);
+  }
+
+  p {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+  }
+
+  &__dl {
+    dt {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 1rem;
+    }
+
+    dd {
+      margin: 0.25rem 0 0;
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+    }
+  }
+}

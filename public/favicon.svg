@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32" fill="#3b82f6"/>
+  <!-- Head -->
+  <circle cx="40" cy="10" r="5.5" fill="#fff"/>
+  <!-- Torso -->
+  <path d="M37 15 C34 18 30 23 28 29 L22 44" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Right leg (front, kicking forward) -->
+  <path d="M28 29 C30 36 30 40 32 45 C34 49 40 51 44 50" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Left leg (back, pushing off) -->
+  <path d="M22 44 C20 47 16 50 12 50" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Right arm (back, swinging back-low) -->
+  <path d="M33 21 C36 25 40 27 44 26" stroke="#fff" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <!-- Left arm (front, swinging forward-high) -->
+  <path d="M30 23 C26 20 22 16 20 13" stroke="#fff" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+</svg>

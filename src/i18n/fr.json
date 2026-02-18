@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "paceSpeed": "Allure / Vitesse",
+    "splitTimes": "Temps de passage",
+    "zones": "Zones",
+    "prediction": "Prédiction",
+    "settingsAriaLabel": "Paramètres"
+  },
+  "paceSpeed": {
+    "title": "Allure / Vitesse",
+    "sectionPaceToSpeed": "Allure → Vitesse",
+    "paceLabel": "Allure ({{unit}})",
+    "pacePlaceholder": "mm:ss",
+    "paceHint": "Format : mm:ss",
+    "speedLabel": "Vitesse",
+    "sectionSpeedToPace": "Vitesse → Allure",
+    "speedInputLabel": "Vitesse ({{unit}})",
+    "speedPlaceholder": "ex. : 12,5",
+    "paceResultLabel": "Allure"
+  },
+  "splitTimes": {
+    "title": "Temps de passage",
+    "tabByPace": "Par allure",
+    "tabByMas": "Par % VMA",
+    "tabByTarget": "Par objectif",
+    "paceLabel": "Allure ({{unit}})",
+    "pacePlaceholder": "mm:ss",
+    "paceHint": "Format : mm:ss",
+    "masLabel": "VMA (km/h)",
+    "masPlaceholder": "ex. : 16",
+    "masPercentLabel": "% de VMA",
+    "masPercentPlaceholder": "ex. : 100",
+    "masPercentHint": "Typique : 60–100 %",
+    "distanceLabel": "Distance",
+    "targetTimeLabel": "Temps cible",
+    "targetTimePlaceholder": "hh:mm:ss ou mm:ss",
+    "targetTimeHint": "Format : hh:mm:ss ou mm:ss",
+    "equivalentPace": "Allure équivalente :"
+  },
+  "trainingZones": {
+    "title": "Zones d'entraînement",
+    "masLabel": "VMA (km/h)",
+    "masPlaceholder": "ex. : 16",
+    "masHint": "Votre Vitesse Maximale Aérobie en km/h",
+    "emptyState": "Entrez votre VMA ci-dessus pour calculer vos zones d'entraînement."
+  },
+  "perfPrediction": {
+    "title": "Prédiction de performance",
+    "modelDanielsLabel": "Jack Daniels",
+    "modelDanielsDescription": "Formule VDOT — physiologiquement fondée, basée sur le VO₂max et l'économie de course.",
+    "modelRiegelLabel": "Riegel",
+    "modelRiegelDescription": "Formule puissance T2 = T1 × (D2/D1)^1,06 — simple et largement utilisée.",
+    "referenceDistanceLabel": "Distance de référence",
+    "raceTimeLabel": "Temps de course",
+    "raceTimePlaceholder": "hh:mm:ss ou mm:ss",
+    "raceTimeHint": "Format : hh:mm:ss ou mm:ss",
+    "vdotLabel": "VDOT"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "languageSection": "Langue",
+    "unitSection": "Unité de mesure",
+    "unitKilometers": "Kilomètres (km)",
+    "unitMiles": "Miles (mi)",
+    "masSection": "VMA de référence",
+    "masLabel": "VMA (km/h)",
+    "masPlaceholder": "ex. : 16",
+    "masHint": "Votre Vitesse Maximale Aérobie — utilisée par défaut dans les Zones d'entraînement et les Temps de passage.",
+    "masSaved": "Enregistré : {{mas}} km/h",
+    "themeSection": "Apparence",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "themeSystem": "Système",
+    "refPerfSection": "Performance de référence",
+    "refPerfHint": "Utilisée pour préremplir la page Prédiction de performance.",
+    "refPerfDistanceLabel": "Distance de course",
+    "refPerfTimeLabel": "Temps de course",
+    "refPerfTimePlaceholder": "hh:mm:ss ou mm:ss",
+    "refPerfTimeHint": "Format : hh:mm:ss ou mm:ss",
+    "refPerfSaved": "Enregistré : {{distance}} en {{time}}"
+  },
+  "splitTable": {
+    "emptyState": "Entrez des valeurs ci-dessus pour voir les temps de passage.",
+    "colDistance": "Distance",
+    "colTime": "Temps",
+    "colPace": "Allure ({{unit}})"
+  },
+  "predictionTable": {
+    "emptyState": "Entrez une performance de référence ci-dessus pour voir les prédictions.",
+    "colDistance": "Distance",
+    "colPredictedTime": "Temps prédit",
+    "colPace": "Allure ({{unit}})",
+    "refBadge": "réf"
+  },
+  "zoneCard": {
+    "masPercent": "{{min}}–{{max}} % VMA"
+  },
+  "footer": {
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Politique cookies",
+    "copyright": "© {{year}} Running Calculator"
+  },
+  "cookieBanner": {
+    "message": "Nous utilisons des cookies pour sauvegarder vos préférences (langue, unité, VMA) localement sur votre appareil. Aucun cookie de suivi ou publicitaire n'est utilisé.",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "learnMore": "En savoir plus"
+  },
+  "legal": {
+    "noticeTitle": "Mentions légales",
+    "noticeSite": "Site",
+    "noticePublisher": "Éditeur",
+    "noticePublisherValue": "Running Calculator — projet indépendant",
+    "noticeHost": "Hébergement",
+    "noticeHostValue": "Hébergement statique (CDN)",
+    "noticeContact": "Contact",
+    "noticeContactValue": "Voir la Politique de confidentialité",
+    "privacyTitle": "Politique de confidentialité",
+    "privacyIntro": "Running Calculator s'engage à protéger votre vie privée.",
+    "privacyDataTitle": "Données collectées",
+    "privacyDataBody": "Ce site ne collecte aucune donnée personnelle. Vos préférences (langue, unité, VMA) sont stockées exclusivement dans le localStorage de votre navigateur et ne sont jamais transmises à un serveur.",
+    "privacyCookiesTitle": "Cookies",
+    "privacyCookiesBody": "Nous utilisons des cookies fonctionnels pour sauvegarder vos préférences et, avec votre consentement, des cookies Google Analytics pour mesurer l'audience (données anonymisées, sans usage publicitaire).",
+    "privacyThirdTitle": "Tiers",
+    "privacyThirdBody": "Si vous acceptez les cookies, des données d'utilisation anonymisées sont partagées avec Google Analytics (Google LLC, États-Unis). Aucune donnée n'est partagée avec un autre tiers. Google Analytics est configuré avec l'anonymisation IP activée et les signaux publicitaires désactivés.",
+    "privacyRightsTitle": "Vos droits",
+    "privacyRightsBody": "Vous pouvez supprimer vos préférences stockées à tout moment en vidant le localStorage de votre navigateur ou via les outils développeur du navigateur.",
+    "termsTitle": "Conditions d'utilisation",
+    "termsIntro": "En utilisant Running Calculator, vous acceptez les conditions suivantes.",
+    "termsServiceTitle": "Service",
+    "termsServiceBody": "Running Calculator fournit des outils de course (convertisseur d'allure, temps de passage, zones d'entraînement, prédiction de performance) gratuitement. Les calculs sont fournis à titre informatif uniquement et ne constituent pas un avis médical ou un conseil d'entraînement professionnel.",
+    "termsAccuracyTitle": "Précision",
+    "termsAccuracyBody": "Les modèles de prédiction (Jack Daniels VDOT, Riegel) sont basés sur des formules scientifiques, mais les résultats peuvent différer de la performance réelle. Écoutez toujours votre corps.",
+    "termsAvailabilityTitle": "Disponibilité",
+    "termsAvailabilityBody": "Le service est fourni tel quel, sans garantie de disponibilité ou de continuité.",
+    "cookiesTitle": "Politique cookies",
+    "cookiesIntro": "Cette politique explique comment Running Calculator utilise les cookies et le stockage navigateur.",
+    "cookiesWhatTitle": "Ce que nous stockons",
+    "cookiesWhatBody": "Nous stockons un seul élément dans le localStorage sous la clé 'running-calculator:settings' contenant votre langue, votre préférence d'unité et votre valeur de VMA. Ces données ne quittent jamais votre appareil.",
+    "cookiesControlTitle": "Votre contrôle",
+    "cookiesControlBody": "Vous pouvez refuser le stockage à tout moment via la bannière cookies. Vous pouvez également effacer les données stockées via les paramètres de votre navigateur (Application → Local Storage).",
+    "cookiesAnalyticsTitle": "Google Analytics",
+    "cookiesAnalyticsBody": "Avec votre consentement, nous utilisons Google Analytics 4 pour mesurer l'audience de façon anonyme (pages visitées, durée des sessions). L'anonymisation IP est activée. Ces données sont transmises à Google LLC (États-Unis) et soumises à la politique de confidentialité de Google. Aucun usage publicitaire n'est fait de ces données.",
+    "cookiesNoTrackTitle": "Publicité",
+    "cookiesNoTrackBody": "Nous n'utilisons aucun cookie publicitaire ou de reciblage."
+  },
+  "zones": {
+    "zone1": {
+      "name": "Zone 1 — Récupération",
+      "description": "Effort très facile. Récupération active, échauffement, retour au calme."
+    },
+    "zone2": {
+      "name": "Zone 2 — Aérobie",
+      "description": "Allure confortable, conversation aisée. Développe la base aérobie."
+    },
+    "zone3": {
+      "name": "Zone 3 — Tempo",
+      "description": "Difficile mais soutenu. Améliore le seuil lactique."
+    },
+    "zone4": {
+      "name": "Zone 4 — Seuil",
+      "description": "Effort intense. Allure de course pour longues distances."
+    },
+    "zone5": {
+      "name": "Zone 5 — VO2max",
+      "description": "Très intense. Développe la capacité aérobie maximale."
+    }
+  }
+}
