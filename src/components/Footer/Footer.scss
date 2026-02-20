@@ -1,4 +1,10 @@
 .app-footer {
+  display: none; // Hidden on mobile — legal links are in Settings
+
+  @media (min-width: 640px) {
+    display: block;
+  }
+
   border-top: 1px solid var(--color-border);
   background: var(--color-surface-alt);
   padding: 1.25rem 1rem;

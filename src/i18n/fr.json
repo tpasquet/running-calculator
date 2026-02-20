@@ -4,7 +4,14 @@
     "splitTimes": "Temps de passage",
     "zones": "Zones",
     "prediction": "Prédiction",
-    "settingsAriaLabel": "Paramètres"
+    "intervals": "Intervalles",
+    "vdot": "VDOT",
+    "settingsAriaLabel": "Paramètres",
+    "paceShort": "Allure",
+    "splitsShort": "Passages",
+    "predictionShort": "Prédiction",
+    "intervalsShort": "Intervalles",
+    "settingsShort": "Réglages"
   },
   "paceSpeed": {
     "title": "Allure / Vitesse",
@@ -42,7 +49,62 @@
     "masLabel": "VMA (km/h)",
     "masPlaceholder": "ex. : 16",
     "masHint": "Votre Vitesse Maximale Aérobie en km/h",
-    "emptyState": "Entrez votre VMA ci-dessus pour calculer vos zones d'entraînement."
+    "emptyState": "Entrez votre VMA ci-dessus pour calculer vos zones d'entraînement.",
+    "modelMas": "% VMA",
+    "modelDaniels": "Jack Daniels",
+    "modelHr": "Fréquence cardiaque",
+    "hrMaxLabel": "FC max (bpm)",
+    "hrMaxPlaceholder": "ex. : 190",
+    "hrRestingLabel": "FC repos (bpm)",
+    "hrRestingPlaceholder": "ex. : 50",
+    "hrEmptyState": "Entrez votre FC max et votre FC de repos pour calculer vos zones.",
+    "hrZoneRange": "{{min}} – {{max}} bpm",
+    "modelRpe": "RPE",
+    "modelBorg": "Borg"
+  },
+  "danielsZones": {
+    "easy": {
+      "name": "E — Endurance fondamentale",
+      "description": "Allure conversationnelle confortable. Développe la base aérobie et favorise la récupération."
+    },
+    "marathon": {
+      "name": "M — Marathon",
+      "description": "Allure cible marathon. Développe l'économie de course à effort soutenu."
+    },
+    "threshold": {
+      "name": "T — Seuil",
+      "description": "Difficile mais maîtrisé. Améliore l'élimination du lactate et élève le seuil anaérobie."
+    },
+    "interval": {
+      "name": "I — Intervalle",
+      "description": "Effort intense à l'intensité VO₂max. Développe la capacité aérobie maximale."
+    },
+    "repetition": {
+      "name": "R — Répétition",
+      "description": "Répétitions très rapides et courtes. Améliore l'économie de course, la vitesse et l'efficacité neuromusculaire."
+    }
+  },
+  "hrZones": {
+    "zone1": {
+      "name": "Zone 1 — Récupération",
+      "description": "Effort très facile. Récupération active, échauffement et retour au calme."
+    },
+    "zone2": {
+      "name": "Zone 2 — Base aérobie",
+      "description": "Effort aérobie confortable. Zone principale de combustion des graisses, développe l'endurance."
+    },
+    "zone3": {
+      "name": "Zone 3 — Tempo",
+      "description": "Effort modéré à intense. Améliore l'efficacité aérobie et le seuil lactique."
+    },
+    "zone4": {
+      "name": "Zone 4 — Seuil",
+      "description": "Effort intense près du seuil anaérobie. Augmente la vitesse et l'endurance au rythme de course."
+    },
+    "zone5": {
+      "name": "Zone 5 — VO₂max",
+      "description": "Effort maximum. Développe la consommation maximale d'oxygène et la vitesse."
+    }
   },
   "perfPrediction": {
     "title": "Prédiction de performance",
@@ -77,7 +139,62 @@
     "refPerfTimeLabel": "Temps de course",
     "refPerfTimePlaceholder": "hh:mm:ss ou mm:ss",
     "refPerfTimeHint": "Format : hh:mm:ss ou mm:ss",
-    "refPerfSaved": "Enregistré : {{distance}} en {{time}}"
+    "refPerfSaved": "Enregistré : {{distance}} en {{time}}",
+    "hrSection": "Fréquence cardiaque",
+    "hrMaxLabel": "FC max (bpm)",
+    "hrMaxPlaceholder": "ex. : 190",
+    "hrMaxHint": "Votre fréquence cardiaque maximale — utilisée dans les zones FC.",
+    "hrRestingLabel": "FC repos (bpm)",
+    "hrRestingPlaceholder": "ex. : 50",
+    "hrRestingHint": "Votre fréquence cardiaque au repos (mesurée le matin).",
+    "hrSaved": "Enregistré : max {{max}} bpm / repos {{resting}} bpm",
+    "aboutSection": "À propos",
+    "aboutLegal": "Mentions légales",
+    "aboutPrivacy": "Politique de confidentialité",
+    "aboutTerms": "Conditions d'utilisation",
+    "aboutCookies": "Politique cookies",
+    "aboutCredits": "Crédits & références"
+  },
+  "intervalCalc": {
+    "title": "Calculateur d'intervalles",
+    "masLabel": "VMA (km/h)",
+    "masPlaceholder": "ex. : 16",
+    "masHint": "Votre Vitesse Maximale Aérobie",
+    "masPercentLabel": "% de VMA",
+    "masPercentPlaceholder": "ex. : 100",
+    "masPercentHint": "Typique : 95–105 % pour les intervalles",
+    "distanceLabel": "Distance par répétition",
+    "repsLabel": "Répétitions",
+    "repsPlaceholder": "ex. : 10",
+    "recoveryLabel": "Récupération entre chaque répétition",
+    "emptyState": "Entrez votre VMA, le % et le nombre de répétitions pour calculer votre séance.",
+    "sessionSummary": "Résumé de la séance",
+    "sessionLabel": "Séance",
+    "totalDistanceLabel": "Distance totale",
+    "workTimeLabel": "Temps de travail",
+    "totalTimeLabel": "Temps total (récup. incluse)",
+    "repTitle": "Par répétition",
+    "repTimeLabel": "Temps",
+    "repPaceLabel": "Allure",
+    "repSpeedLabel": "Vitesse",
+    "colRep": "Rép.",
+    "colTime": "Temps",
+    "colRecovery": "Récupération"
+  },
+  "vdotTraining": {
+    "title": "Allures VDOT",
+    "subtitle": "Allures d'entraînement Jack Daniels calculées depuis votre VDOT.",
+    "tabPerf": "Depuis une course",
+    "tabVdot": "Depuis le VDOT",
+    "distanceLabel": "Distance de référence",
+    "raceTimeLabel": "Temps de course",
+    "raceTimePlaceholder": "hh:mm:ss ou mm:ss",
+    "raceTimeHint": "Format : hh:mm:ss ou mm:ss",
+    "vdotLabel": "VDOT",
+    "vdotPlaceholder": "ex. : 50",
+    "vdotHint": "Entrez votre valeur VDOT connue",
+    "vdotResult": "VDOT",
+    "emptyState": "Entrez une performance de référence ou un VDOT pour calculer vos allures d'entraînement."
   },
   "splitTable": {
     "emptyState": "Entrez des valeurs ci-dessus pour voir les temps de passage.",
@@ -100,7 +217,42 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "cookies": "Politique cookies",
-    "copyright": "© {{year}} Running Calculator"
+    "credits": "Crédits",
+    "copyright": "© {{year}} PaceTool"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "body": "La page que vous recherchez n'existe pas.",
+    "back": "Retour à l'accueil"
+  },
+  "onboarding": {
+    "title": "Configurez votre profil",
+    "body": "Renseignez votre VMA dans les Paramètres pour préremplir les Zones d'entraînement et les Temps de passage.",
+    "cta": "Ouvrir les paramètres"
+  },
+  "credits": {
+    "title": "Crédits & références",
+    "intro": "PaceTool utilise des modèles scientifiques établis. Voici les sources.",
+    "vdotTitle": "Jack Daniels VDOT",
+    "vdotBody": "Les prédictions de performance et les allures d'entraînement sont basées sur la formule VDOT de Daniels-Gilbert, qui estime le VO₂max à partir de performances en course.",
+    "vdotRef": "Daniels J, Gilbert J. Oxygen Power: Performance Tables for Distance Runners. 1979.",
+    "vdotRef2": "Daniels J. Daniels' Running Formula (3e éd.). Human Kinetics, 2014.",
+    "riegelTitle": "Formule de Riegel",
+    "riegelBody": "Le modèle de Riegel prédit les temps de course sur différentes distances via la loi de puissance T₂ = T₁ × (D₂/D₁)^1,06.",
+    "riegelRef": "Riegel P.S. Athletic Records and Human Endurance. American Scientist, 69(3), 285–290. 1981.",
+    "karvonenTitle": "Zones FC — Méthode Karvonen",
+    "karvonenBody": "Les zones d'entraînement en fréquence cardiaque sont calculées avec la méthode de Karvonen (réserve de fréquence cardiaque), qui prend en compte la FC max et la FC au repos.",
+    "karvonenRef": "Karvonen M, Kentala E, Mustala O. The effects of training on heart rate. Ann Med Exp Biol Fenn. 1957;35(3):307–15.",
+    "borgTitle": "Échelle de Borg (RPE 6–20)",
+    "borgBody": "L'échelle de Borg (6–20) est l'échelle originale de perception de l'effort. Les valeurs correspondent approximativement à la fréquence cardiaque divisée par 10.",
+    "borgRef": "Borg G. Perceived exertion as an indicator of somatic stress. Scand J Rehab Med. 1970;2(2):92–8.",
+    "rpeTitle": "Échelle RPE simplifiée (1–10)",
+    "rpeBody": "L'échelle RPE 1–10 est dérivée des travaux de Borg et est largement utilisée en coaching moderne pour son caractère intuitif.",
+    "rpeRef": "Foster C et al. A New Approach to Monitoring Exercise Training. J Strength Cond Res. 2001;15(1):109–115.",
+    "masTitle": "Zones % VMA",
+    "masBody": "Les zones d'entraînement exprimées en pourcentage de VMA (Vitesse Maximale Aérobie) sont standard dans la méthodologie de l'athlétisme français.",
+    "masRef": "Billat V. Use of blood lactate measurements for prediction of exercise performance. Sports Med. 1996;22(3):157–175.",
+    "openSource": "Cette application est un projet open-source indépendant. Aucune affiliation avec les auteurs ou éditeurs cités."
   },
   "cookieBanner": {
     "message": "Nous utilisons des cookies pour sauvegarder vos préférences (langue, unité, VMA) localement sur votre appareil. Aucun cookie de suivi ou publicitaire n'est utilisé.",
@@ -112,13 +264,13 @@
     "noticeTitle": "Mentions légales",
     "noticeSite": "Site",
     "noticePublisher": "Éditeur",
-    "noticePublisherValue": "Running Calculator — projet indépendant",
+    "noticePublisherValue": "PaceTool — projet indépendant",
     "noticeHost": "Hébergement",
     "noticeHostValue": "Hébergement statique (CDN)",
     "noticeContact": "Contact",
     "noticeContactValue": "Voir la Politique de confidentialité",
     "privacyTitle": "Politique de confidentialité",
-    "privacyIntro": "Running Calculator s'engage à protéger votre vie privée.",
+    "privacyIntro": "PaceTool s'engage à protéger votre vie privée.",
     "privacyDataTitle": "Données collectées",
     "privacyDataBody": "Ce site ne collecte aucune donnée personnelle. Vos préférences (langue, unité, VMA) sont stockées exclusivement dans le localStorage de votre navigateur et ne sont jamais transmises à un serveur.",
     "privacyCookiesTitle": "Cookies",
@@ -128,15 +280,15 @@
     "privacyRightsTitle": "Vos droits",
     "privacyRightsBody": "Vous pouvez supprimer vos préférences stockées à tout moment en vidant le localStorage de votre navigateur ou via les outils développeur du navigateur.",
     "termsTitle": "Conditions d'utilisation",
-    "termsIntro": "En utilisant Running Calculator, vous acceptez les conditions suivantes.",
+    "termsIntro": "En utilisant PaceTool, vous acceptez les conditions suivantes.",
     "termsServiceTitle": "Service",
-    "termsServiceBody": "Running Calculator fournit des outils de course (convertisseur d'allure, temps de passage, zones d'entraînement, prédiction de performance) gratuitement. Les calculs sont fournis à titre informatif uniquement et ne constituent pas un avis médical ou un conseil d'entraînement professionnel.",
+    "termsServiceBody": "PaceTool fournit des outils de course (convertisseur d'allure, temps de passage, zones d'entraînement, prédiction de performance) gratuitement. Les calculs sont fournis à titre informatif uniquement et ne constituent pas un avis médical ou un conseil d'entraînement professionnel.",
     "termsAccuracyTitle": "Précision",
     "termsAccuracyBody": "Les modèles de prédiction (Jack Daniels VDOT, Riegel) sont basés sur des formules scientifiques, mais les résultats peuvent différer de la performance réelle. Écoutez toujours votre corps.",
     "termsAvailabilityTitle": "Disponibilité",
     "termsAvailabilityBody": "Le service est fourni tel quel, sans garantie de disponibilité ou de continuité.",
     "cookiesTitle": "Politique cookies",
-    "cookiesIntro": "Cette politique explique comment Running Calculator utilise les cookies et le stockage navigateur.",
+    "cookiesIntro": "Cette politique explique comment PaceTool utilise les cookies et le stockage navigateur.",
     "cookiesWhatTitle": "Ce que nous stockons",
     "cookiesWhatBody": "Nous stockons un seul élément dans le localStorage sous la clé 'running-calculator:settings' contenant votre langue, votre préférence d'unité et votre valeur de VMA. Ces données ne quittent jamais votre appareil.",
     "cookiesControlTitle": "Votre contrôle",
@@ -145,6 +297,35 @@
     "cookiesAnalyticsBody": "Avec votre consentement, nous utilisons Google Analytics 4 pour mesurer l'audience de façon anonyme (pages visitées, durée des sessions). L'anonymisation IP est activée. Ces données sont transmises à Google LLC (États-Unis) et soumises à la politique de confidentialité de Google. Aucun usage publicitaire n'est fait de ces données.",
     "cookiesNoTrackTitle": "Publicité",
     "cookiesNoTrackBody": "Nous n'utilisons aucun cookie publicitaire ou de reciblage."
+  },
+  "rpeZones": {
+    "rpe1": { "name": "1 — Repos", "description": "Aucun effort. Au repos." },
+    "rpe2": { "name": "2 — Très facile", "description": "Effort très léger. Peut être maintenu des heures." },
+    "rpe3": { "name": "3 — Facile", "description": "Effort léger. Confortable, respiration aisée." },
+    "rpe4": { "name": "4 — Modéré", "description": "Assez facile. Respiration légèrement plus lourde mais confortable." },
+    "rpe5": { "name": "5 — Modéré–Difficile", "description": "Effort modéré. Conversation possible mais nécessite de la concentration." },
+    "rpe6": { "name": "6 — Difficile", "description": "Ça devient difficile. Phrases courtes seulement." },
+    "rpe7": { "name": "7 — Très difficile", "description": "Très difficile. Quelques mots seulement." },
+    "rpe8": { "name": "8 — Extrêmement difficile", "description": "Extrêmement difficile. À peine capable de parler." },
+    "rpe9": { "name": "9 — Quasi-maximum", "description": "Effort quasi-maximal. Presque impossible de continuer." },
+    "rpe10": { "name": "10 — Maximum", "description": "Effort maximum. Ne peut pas être maintenu." }
+  },
+  "borgZones": {
+    "borg6": { "name": "6 — Aucun effort", "description": "Aucun effort. Repos complet." },
+    "borg7": { "name": "7 — Extrêmement léger", "description": "Mouvement très doux. Effort à peine perceptible." },
+    "borg8": { "name": "8", "description": "Mouvement très léger, sans effort." },
+    "borg9": { "name": "9 — Très léger", "description": "Marche lente et facile. Très peu d'effort." },
+    "borg10": { "name": "10", "description": "Activité légère. Confortable longtemps." },
+    "borg11": { "name": "11 — Léger", "description": "Effort confortable. Respiration légèrement élevée." },
+    "borg12": { "name": "12", "description": "Effort modéré. Conversation encore confortable." },
+    "borg13": { "name": "13 — Assez difficile", "description": "Effort soutenu. Assez difficile mais continuable." },
+    "borg14": { "name": "14", "description": "Effort difficile. Phrases courtes seulement." },
+    "borg15": { "name": "15 — Difficile", "description": "Effort difficile. Difficulté à tenir une conversation." },
+    "borg16": { "name": "16", "description": "Effort très difficile. Quelques mots seulement." },
+    "borg17": { "name": "17 — Très difficile", "description": "Très éprouvant. Proche de votre limite." },
+    "borg18": { "name": "18", "description": "Extrêmement difficile. Très proche du maximum." },
+    "borg19": { "name": "19 — Extrêmement difficile", "description": "Extrêmement éprouvant. Quasi-maximum absolu." },
+    "borg20": { "name": "20 — Maximum", "description": "Effort maximal. Limite absolue." }
   },
   "zones": {
     "zone1": {

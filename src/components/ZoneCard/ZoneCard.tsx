@@ -1,15 +1,21 @@
 import './ZoneCard.scss'
-import type { TrainingZone } from '../../utils/trainingZones'
-import { formatSpeedRange, formatPaceRange } from '../../utils/trainingZones'
 import type { Unit } from '../../utils/paceSpeed'
 import { useT } from '../../i18n/useT'
 
 interface ZoneCardProps {
-  zone: TrainingZone
+  zone: {
+    color: string
+    nameKey: string
+    descriptionKey: string
+  }
   unit: Unit
+  badge: string
+  speedRange?: string
+  paceRange?: string
+  hrRange?: string
 }
 
-export function ZoneCard({ zone, unit }: ZoneCardProps) {
+export function ZoneCard({ zone, badge, speedRange, paceRange, hrRange }: ZoneCardProps) {
   const t = useT()
   return (
     <div className="zone-card" style={{ '--zone-color': zone.color } as React.CSSProperties}>
@@ -17,18 +23,19 @@ export function ZoneCard({ zone, unit }: ZoneCardProps) {
       <div className="zone-card__content">
         <div className="zone-card__header">
           <span className="zone-card__name">{t(zone.nameKey)}</span>
-          <span className="zone-card__percent">
-            {t('zoneCard.masPercent', { min: zone.minPercent, max: zone.maxPercent })}
-          </span>
+          <span className="zone-card__percent">{badge}</span>
         </div>
         <p className="zone-card__description">{t(zone.descriptionKey)}</p>
         <div className="zone-card__stats">
-          <span className="zone-card__stat">
-            {formatPaceRange(zone.minPaceSeconds, zone.maxPaceSeconds, unit)}
-          </span>
-          <span className="zone-card__stat zone-card__stat--muted">
-            {formatSpeedRange(zone.minSpeedKmh, zone.maxSpeedKmh, unit)}
-          </span>
+          {hrRange && (
+            <span className="zone-card__stat">{hrRange}</span>
+          )}
+          {paceRange && (
+            <span className="zone-card__stat">{paceRange}</span>
+          )}
+          {speedRange && (
+            <span className="zone-card__stat zone-card__stat--muted">{speedRange}</span>
+          )}
         </div>
       </div>
     </div>

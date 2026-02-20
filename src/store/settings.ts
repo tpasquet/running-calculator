@@ -11,6 +11,8 @@ export interface Settings {
   theme: Theme
   refDistanceMeters: number | null  // Reference race distance in meters
   refTimeSeconds: number | null     // Reference race time in seconds
+  maxHr: number | null              // Maximum heart rate in bpm
+  restingHr: number | null          // Resting heart rate in bpm
 }
 
 const STORAGE_KEY = 'running-calculator:settings'
@@ -22,6 +24,8 @@ const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
   refDistanceMeters: null,
   refTimeSeconds: null,
+  maxHr: null,
+  restingHr: null,
 }
 
 function loadSettings(): Settings {

@@ -7,6 +7,7 @@ export interface Distance {
 
 export const STANDARD_DISTANCES: Distance[] = [
   { label: '200 m', meters: 200 },
+  { label: '300 m', meters: 300 },
   { label: '400 m', meters: 400 },
   { label: '800 m', meters: 800 },
   { label: '1 km', meters: 1000 },

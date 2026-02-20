@@ -110,6 +110,7 @@ export function SplitTimeCalculator() {
             placeholder={t('splitTimes.pacePlaceholder')}
             hint={t('splitTimes.paceHint')}
             error={isPaceError}
+            inputMode="text"
           />
         )}
 
@@ -153,6 +154,7 @@ export function SplitTimeCalculator() {
               placeholder={t('splitTimes.targetTimePlaceholder')}
               hint={t('splitTimes.targetTimeHint')}
               error={isTargetError}
+              inputMode="text"
             />
           </>
         )}

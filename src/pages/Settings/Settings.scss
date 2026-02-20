@@ -106,4 +106,52 @@
       border-color: var(--color-primary);
     }
   }
+
+  &__about-links {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  &__about-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    font-weight: 400;
+    text-align: left;
+    background: var(--color-surface);
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background 0.15s;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: var(--color-surface-hover);
+    }
+  }
+
+  &__about-chevron {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+  }
+
+  // On desktop, hide About section — it's in the footer
+  @media (min-width: 640px) {
+    &__about {
+      display: none;
+    }
+  }
 }

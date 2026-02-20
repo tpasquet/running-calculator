@@ -2,7 +2,7 @@ import { useT } from '../../i18n/useT'
 import './Footer.scss'
 
 interface FooterProps {
-  onNavigate: (page: 'legal' | 'privacy' | 'terms' | 'cookies') => void
+  onNavigate: (page: 'legal' | 'privacy' | 'terms' | 'cookies' | 'credits') => void
 }
 
 export function Footer({ onNavigate }: FooterProps) {
@@ -23,6 +23,9 @@ export function Footer({ onNavigate }: FooterProps) {
         </button>
         <button type="button" className="app-footer__link" onClick={() => onNavigate('cookies')}>
           {t('footer.cookies')}
+        </button>
+        <button type="button" className="app-footer__link" onClick={() => onNavigate('credits')}>
+          {t('footer.credits')}
         </button>
       </nav>
       <p className="app-footer__copyright">{t('footer.copyright', { year })}</p>

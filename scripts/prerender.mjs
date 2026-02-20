@@ -20,8 +20,8 @@ const frHtml = enHtml
   .replace('<html lang="en"', '<html lang="fr"')
   // title
   .replace(
-    '<title>Running Calculator — Pace, Split Times, Training Zones &amp; Performance Prediction</title>',
-    '<title>Calculateur Running — Allure, Temps Intermédiaires, Zones d\'Entraînement &amp; Prédiction de Performance</title>',
+    '<title>PaceTool — Pace, Split Times, Training Zones &amp; Performance Prediction</title>',
+    '<title>PaceTool — Allure, Temps Intermédiaires, Zones d\'Entraînement &amp; Prédiction de Performance</title>',
   )
   // description
   .replace(
@@ -30,18 +30,18 @@ const frHtml = enHtml
   )
   // canonical
   .replace(
-    '<link rel="canonical" href="https://running-calculator.app/" />',
-    '<link rel="canonical" href="https://running-calculator.app/fr/" />',
+    '<link rel="canonical" href="https://pacetool.run/" />',
+    '<link rel="canonical" href="https://pacetool.run/fr/" />',
   )
   // OG url
   .replace(
-    '<meta property="og:url" content="https://running-calculator.app/" />',
-    '<meta property="og:url" content="https://running-calculator.app/fr/" />',
+    '<meta property="og:url" content="https://pacetool.run/" />',
+    '<meta property="og:url" content="https://pacetool.run/fr/" />',
   )
   // OG title
   .replace(
-    '<meta property="og:title" content="Running Calculator — Pace, Split Times, Training Zones &amp; Performance Prediction" />',
-    '<meta property="og:title" content="Calculateur Running — Allure, Temps Intermédiaires, Zones d\'Entraînement &amp; Prédiction de Performance" />',
+    '<meta property="og:title" content="PaceTool — Pace, Split Times, Training Zones &amp; Performance Prediction" />',
+    '<meta property="og:title" content="PaceTool — Allure, Temps Intermédiaires, Zones d\'Entraînement &amp; Prédiction de Performance" />',
   )
   // OG description
   .replace(
@@ -59,8 +59,8 @@ const frHtml = enHtml
   )
   // Twitter title
   .replace(
-    '<meta name="twitter:title" content="Running Calculator — Pace, Split Times, Training Zones &amp; Performance Prediction" />',
-    '<meta name="twitter:title" content="Calculateur Running — Allure, Temps Intermédiaires, Zones d\'Entraînement &amp; Prédiction" />',
+    '<meta name="twitter:title" content="PaceTool — Pace, Split Times, Training Zones &amp; Performance Prediction" />',
+    '<meta name="twitter:title" content="PaceTool — Allure, Temps Intermédiaires, Zones d\'Entraînement &amp; Prédiction" />',
   )
   // Twitter description
   .replace(

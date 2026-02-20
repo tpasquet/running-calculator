@@ -98,6 +98,7 @@ export function PerformancePrediction() {
           placeholder={t('perfPrediction.raceTimePlaceholder')}
           hint={t('perfPrediction.raceTimeHint')}
           error={isTimeError}
+          inputMode="text"
         />
       </div>
 

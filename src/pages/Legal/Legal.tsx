@@ -1,7 +1,7 @@
 import { useT } from '../../i18n/useT'
 import './Legal.scss'
 
-type LegalPage = 'legal' | 'privacy' | 'terms' | 'cookies'
+type LegalPage = 'legal' | 'privacy' | 'terms' | 'cookies' | 'credits'
 
 interface LegalProps {
   page: LegalPage
@@ -68,6 +68,52 @@ export function Legal({ page }: LegalProps) {
           <p>{t('legal.cookiesAnalyticsBody')}</p>
           <h2>{t('legal.cookiesNoTrackTitle')}</h2>
           <p>{t('legal.cookiesNoTrackBody')}</p>
+        </>
+      )}
+
+      {page === 'credits' && (
+        <>
+          <h1 className="legal__title">{t('credits.title')}</h1>
+          <p>{t('credits.intro')}</p>
+
+          <h2>{t('credits.vdotTitle')}</h2>
+          <p>{t('credits.vdotBody')}</p>
+          <ul className="legal__refs">
+            <li>{t('credits.vdotRef')}</li>
+            <li>{t('credits.vdotRef2')}</li>
+          </ul>
+
+          <h2>{t('credits.riegelTitle')}</h2>
+          <p>{t('credits.riegelBody')}</p>
+          <ul className="legal__refs">
+            <li>{t('credits.riegelRef')}</li>
+          </ul>
+
+          <h2>{t('credits.karvonenTitle')}</h2>
+          <p>{t('credits.karvonenBody')}</p>
+          <ul className="legal__refs">
+            <li>{t('credits.karvonenRef')}</li>
+          </ul>
+
+          <h2>{t('credits.masTitle')}</h2>
+          <p>{t('credits.masBody')}</p>
+          <ul className="legal__refs">
+            <li>{t('credits.masRef')}</li>
+          </ul>
+
+          <h2>{t('credits.borgTitle')}</h2>
+          <p>{t('credits.borgBody')}</p>
+          <ul className="legal__refs">
+            <li>{t('credits.borgRef')}</li>
+          </ul>
+
+          <h2>{t('credits.rpeTitle')}</h2>
+          <p>{t('credits.rpeBody')}</p>
+          <ul className="legal__refs">
+            <li>{t('credits.rpeRef')}</li>
+          </ul>
+
+          <p className="legal__open-source">{t('credits.openSource')}</p>
         </>
       )}
     </article>

@@ -7,16 +7,17 @@ interface NumericInputProps {
   placeholder?: string
   hint?: string
   error?: boolean
+  inputMode?: 'decimal' | 'numeric' | 'text'
 }
 
-export function NumericInput({ label, value, onChange, placeholder, hint, error }: NumericInputProps) {
+export function NumericInput({ label, value, onChange, placeholder, hint, error, inputMode = 'decimal' }: NumericInputProps) {
   return (
     <div className={`numeric-input${error ? ' numeric-input--error' : ''}`}>
       <label className="numeric-input__label">{label}</label>
       <input
         className="numeric-input__field"
         type="text"
-        inputMode="decimal"
+        inputMode={inputMode}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}

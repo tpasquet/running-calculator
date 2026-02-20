@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'favicon-32x32.png', 'favicon-16x16.png', 'apple-touch-icon.png', 'robots.txt', 'sitemap.xml'],
       manifest: {
-        name: 'Running Calculator',
-        short_name: 'RunCalc',
+        name: 'PaceTool',
+        short_name: 'PaceTool',
         description: 'Free running calculator: pace converter, split times, training zones from MAS/VMA, and race performance prediction. Works offline.',
         theme_color: '#3b82f6',
         background_color: '#ffffff',
@@ -44,7 +44,7 @@ export default defineConfig({
             sizes: '1200x630',
             type: 'image/png',
             form_factor: 'wide',
-            label: 'Running Calculator — Pace converter and training tools',
+            label: 'PaceTool — Pace converter and training tools',
           },
         ],
       },
@@ -56,7 +56,7 @@ export default defineConfig({
         // Serve stale content while revalidating in the background
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/running-calculator\.app\/.*/i,
+            urlPattern: /^https:\/\/pacetool\.run\/.*/i,
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'app-cache',

@@ -21,6 +21,44 @@
     color: var(--color-text);
   }
 
+  &__tabs {
+    display: flex;
+    gap: 0.25rem;
+    background: var(--color-surface-alt);
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    overflow-x: auto;
+    scrollbar-width: none; // Firefox
+    &::-webkit-scrollbar {
+      display: none; // Chrome, Safari
+    }
+  }
+
+  &__tab {
+    flex: 0 0 auto;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: inherit;
+    border: none;
+    border-radius: 0.375rem;
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+
+    &--active {
+      background: var(--color-surface);
+      color: var(--color-primary);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover:not(&--active) {
+      color: var(--color-text);
+    }
+  }
+
   &__empty {
     text-align: center;
     color: var(--color-text-muted);

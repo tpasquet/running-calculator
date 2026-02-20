@@ -25,12 +25,17 @@
     display: flex;
     border: 2px solid var(--color-border);
     border-radius: 0.5rem;
-    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none; // Firefox
+    &::-webkit-scrollbar {
+      display: none; // Chrome, Safari
+    }
   }
 
   &__tab {
-    flex: 1;
-    padding: 0.5rem 0.25rem;
+    flex: 0 0 auto;
+    min-width: 5rem;
+    padding: 0.5rem 0.75rem;
     font-size: 0.8rem;
     font-weight: 500;
     font-family: inherit;
@@ -39,6 +44,7 @@
     color: var(--color-text-secondary);
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
 
     &:not(:last-child) {
       border-right: 2px solid var(--color-border);

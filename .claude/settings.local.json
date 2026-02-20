@@ -6,7 +6,8 @@
       "Bash(node -e \"require(''./node_modules/vite-plugin-pwa/package.json'')\")",
       "Bash(npm install:*)",
       "Bash(npx tsc:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []

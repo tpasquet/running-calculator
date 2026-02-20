@@ -23,6 +23,29 @@
     margin: 0 0 0.75rem;
   }
 
+  &__refs {
+    padding-left: 1.25rem;
+    margin: 0.25rem 0 1rem;
+
+    li {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  &__open-source {
+    margin-top: 2rem;
+    padding: 0.875rem 1rem;
+    background: var(--color-surface-alt);
+    border-radius: 0.5rem;
+    font-size: 0.8125rem !important;
+    color: var(--color-text-muted) !important;
+    font-style: italic;
+  }
+
   &__dl {
     dt {
       font-size: 0.8125rem;

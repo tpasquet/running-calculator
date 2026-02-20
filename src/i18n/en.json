@@ -4,7 +4,14 @@
     "splitTimes": "Split Times",
     "zones": "Zones",
     "prediction": "Prediction",
-    "settingsAriaLabel": "Settings"
+    "intervals": "Intervals",
+    "vdot": "VDOT",
+    "settingsAriaLabel": "Settings",
+    "paceShort": "Pace",
+    "splitsShort": "Splits",
+    "predictionShort": "Predict",
+    "intervalsShort": "Intervals",
+    "settingsShort": "Settings"
   },
   "paceSpeed": {
     "title": "Pace / Speed",
@@ -42,7 +49,62 @@
     "masLabel": "MAS / VMA (km/h)",
     "masPlaceholder": "e.g. 16",
     "masHint": "Your Maximal Aerobic Speed in km/h",
-    "emptyState": "Enter your MAS above to calculate your training zones."
+    "emptyState": "Enter your MAS above to calculate your training zones.",
+    "modelMas": "% VMA",
+    "modelDaniels": "Jack Daniels",
+    "modelHr": "Heart Rate",
+    "hrMaxLabel": "Max HR (bpm)",
+    "hrMaxPlaceholder": "e.g. 190",
+    "hrRestingLabel": "Resting HR (bpm)",
+    "hrRestingPlaceholder": "e.g. 50",
+    "hrEmptyState": "Enter your max and resting heart rate to calculate your zones.",
+    "hrZoneRange": "{{min}} – {{max}} bpm",
+    "modelRpe": "RPE",
+    "modelBorg": "Borg"
+  },
+  "danielsZones": {
+    "easy": {
+      "name": "E — Easy",
+      "description": "Comfortable conversational pace. Builds aerobic base and promotes recovery."
+    },
+    "marathon": {
+      "name": "M — Marathon",
+      "description": "Goal marathon race pace. Develops running economy at sustained effort."
+    },
+    "threshold": {
+      "name": "T — Threshold",
+      "description": "Comfortably hard. Improves lactate clearance and raises anaerobic threshold."
+    },
+    "interval": {
+      "name": "I — Interval",
+      "description": "Hard effort at VO₂max intensity. Develops maximal aerobic capacity."
+    },
+    "repetition": {
+      "name": "R — Repetition",
+      "description": "Very fast, short reps. Improves running economy, speed and neuromuscular efficiency."
+    }
+  },
+  "hrZones": {
+    "zone1": {
+      "name": "Zone 1 — Recovery",
+      "description": "Very easy effort. Active recovery, warm-up and cool-down."
+    },
+    "zone2": {
+      "name": "Zone 2 — Aerobic base",
+      "description": "Comfortable aerobic effort. Primary fat-burning zone, builds endurance."
+    },
+    "zone3": {
+      "name": "Zone 3 — Tempo",
+      "description": "Moderate to hard effort. Improves aerobic efficiency and lactate threshold."
+    },
+    "zone4": {
+      "name": "Zone 4 — Threshold",
+      "description": "Hard effort near anaerobic threshold. Increases speed and race pace endurance."
+    },
+    "zone5": {
+      "name": "Zone 5 — VO₂max",
+      "description": "Maximum effort. Develops maximal oxygen uptake and speed."
+    }
   },
   "perfPrediction": {
     "title": "Performance Prediction",
@@ -77,7 +139,62 @@
     "refPerfTimeLabel": "Race time",
     "refPerfTimePlaceholder": "hh:mm:ss or mm:ss",
     "refPerfTimeHint": "Format: hh:mm:ss or mm:ss",
-    "refPerfSaved": "Saved: {{distance}} in {{time}}"
+    "refPerfSaved": "Saved: {{distance}} in {{time}}",
+    "hrSection": "Heart Rate",
+    "hrMaxLabel": "Max HR (bpm)",
+    "hrMaxPlaceholder": "e.g. 190",
+    "hrMaxHint": "Your maximum heart rate — used in Heart Rate zones.",
+    "hrRestingLabel": "Resting HR (bpm)",
+    "hrRestingPlaceholder": "e.g. 50",
+    "hrRestingHint": "Your resting heart rate (measured in the morning).",
+    "hrSaved": "Saved: max {{max}} bpm / resting {{resting}} bpm",
+    "aboutSection": "About",
+    "aboutLegal": "Legal Notice",
+    "aboutPrivacy": "Privacy Policy",
+    "aboutTerms": "Terms of Use",
+    "aboutCookies": "Cookie Policy",
+    "aboutCredits": "Credits & References"
+  },
+  "intervalCalc": {
+    "title": "Interval Calculator",
+    "masLabel": "MAS / VMA (km/h)",
+    "masPlaceholder": "e.g. 16",
+    "masHint": "Your Maximal Aerobic Speed",
+    "masPercentLabel": "% of MAS",
+    "masPercentPlaceholder": "e.g. 100",
+    "masPercentHint": "Typical: 95–105% for intervals",
+    "distanceLabel": "Distance per rep",
+    "repsLabel": "Repetitions",
+    "repsPlaceholder": "e.g. 10",
+    "recoveryLabel": "Recovery between reps",
+    "emptyState": "Enter your MAS, % and number of reps to calculate your interval session.",
+    "sessionSummary": "Session overview",
+    "sessionLabel": "Session",
+    "totalDistanceLabel": "Total distance",
+    "workTimeLabel": "Work time",
+    "totalTimeLabel": "Total time (incl. recovery)",
+    "repTitle": "Per repetition",
+    "repTimeLabel": "Time",
+    "repPaceLabel": "Pace",
+    "repSpeedLabel": "Speed",
+    "colRep": "Rep",
+    "colTime": "Time",
+    "colRecovery": "Recovery"
+  },
+  "vdotTraining": {
+    "title": "VDOT Training Paces",
+    "subtitle": "Jack Daniels training paces derived from your VDOT.",
+    "tabPerf": "From a race",
+    "tabVdot": "From VDOT",
+    "distanceLabel": "Reference distance",
+    "raceTimeLabel": "Race time",
+    "raceTimePlaceholder": "hh:mm:ss or mm:ss",
+    "raceTimeHint": "Format: hh:mm:ss or mm:ss",
+    "vdotLabel": "VDOT",
+    "vdotPlaceholder": "e.g. 50",
+    "vdotHint": "Enter your known VDOT value",
+    "vdotResult": "VDOT",
+    "emptyState": "Enter a reference performance or a VDOT to calculate your training paces."
   },
   "splitTable": {
     "emptyState": "Enter values above to see split times.",
@@ -100,7 +217,42 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "cookies": "Cookie Policy",
-    "copyright": "© {{year}} Running Calculator"
+    "credits": "Credits",
+    "copyright": "© {{year}} PaceTool"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist.",
+    "back": "Back to home"
+  },
+  "onboarding": {
+    "title": "Set up your profile",
+    "body": "Enter your MAS / VMA in Settings to pre-fill Training Zones and Split Times.",
+    "cta": "Open Settings"
+  },
+  "credits": {
+    "title": "Credits & References",
+    "intro": "PaceTool uses established scientific models. Here are the sources.",
+    "vdotTitle": "Jack Daniels VDOT",
+    "vdotBody": "Performance prediction and training pace zones are based on the Daniels-Gilbert VDOT formula, which estimates VO₂max from race performances and derives equivalent training intensities.",
+    "vdotRef": "Daniels J, Gilbert J. Oxygen Power: Performance Tables for Distance Runners. 1979.",
+    "vdotRef2": "Daniels J. Daniels' Running Formula (3rd ed.). Human Kinetics, 2014.",
+    "riegelTitle": "Riegel Formula",
+    "riegelBody": "The Riegel model predicts race times across distances using the power-law formula T₂ = T₁ × (D₂/D₁)^1.06.",
+    "riegelRef": "Riegel P.S. Athletic Records and Human Endurance. American Scientist, 69(3), 285–290. 1981.",
+    "karvonenTitle": "Karvonen Heart Rate Zones",
+    "karvonenBody": "Heart rate training zones are computed using the Karvonen method (Heart Rate Reserve), which accounts for both maximum and resting heart rate.",
+    "karvonenRef": "Karvonen M, Kentala E, Mustala O. The effects of training on heart rate. Ann Med Exp Biol Fenn. 1957;35(3):307–15.",
+    "borgTitle": "Borg RPE Scale",
+    "borgBody": "The Borg scale (6–20) is the original Rating of Perceived Exertion scale, where the numbers loosely correspond to heart rate ÷ 10.",
+    "borgRef": "Borg G. Perceived exertion as an indicator of somatic stress. Scand J Rehab Med. 1970;2(2):92–8.",
+    "rpeTitle": "Simple RPE Scale (1–10)",
+    "rpeBody": "The simplified 1–10 RPE scale is derived from Borg's work and widely used in modern coaching for its intuitive nature.",
+    "rpeRef": "Foster C et al. A New Approach to Monitoring Exercise Training. J Strength Cond Res. 2001;15(1):109–115.",
+    "masTitle": "% MAS / VMA Zones",
+    "masBody": "Training zones expressed as a percentage of MAS (Maximal Aerobic Speed / Vitesse Maximale Aérobie) are standard in French athletic coaching methodology.",
+    "masRef": "Billat V. Use of blood lactate measurements for prediction of exercise performance. Sports Med. 1996;22(3):157–175.",
+    "openSource": "This application is an independent open-source project. No affiliation with any of the cited authors or publishers."
   },
   "cookieBanner": {
     "message": "We use cookies to save your preferences (language, unit, MAS) locally on your device. No tracking or advertising cookies are used.",
@@ -112,13 +264,13 @@
     "noticeTitle": "Legal Notice",
     "noticeSite": "Site",
     "noticePublisher": "Publisher",
-    "noticePublisherValue": "Running Calculator — independent project",
+    "noticePublisherValue": "PaceTool — independent project",
     "noticeHost": "Hosting",
     "noticeHostValue": "Static hosting (CDN)",
     "noticeContact": "Contact",
     "noticeContactValue": "See Privacy Policy",
     "privacyTitle": "Privacy Policy",
-    "privacyIntro": "Running Calculator is committed to protecting your privacy.",
+    "privacyIntro": "PaceTool is committed to protecting your privacy.",
     "privacyDataTitle": "Data collected",
     "privacyDataBody": "This site does not collect any personal data. Your preferences (language, unit, MAS) are stored exclusively in your browser's localStorage and never transmitted to any server.",
     "privacyCookiesTitle": "Cookies",
@@ -128,15 +280,15 @@
     "privacyRightsTitle": "Your rights",
     "privacyRightsBody": "You can delete your stored preferences at any time by clearing your browser's localStorage or using the browser's developer tools.",
     "termsTitle": "Terms of Use",
-    "termsIntro": "By using Running Calculator, you agree to the following terms.",
+    "termsIntro": "By using PaceTool, you agree to the following terms.",
     "termsServiceTitle": "Service",
-    "termsServiceBody": "Running Calculator provides running tools (pace converter, split times, training zones, performance prediction) free of charge. Calculations are provided for informational purposes only and do not constitute medical or professional coaching advice.",
+    "termsServiceBody": "PaceTool provides running tools (pace converter, split times, training zones, performance prediction) free of charge. Calculations are provided for informational purposes only and do not constitute medical or professional coaching advice.",
     "termsAccuracyTitle": "Accuracy",
     "termsAccuracyBody": "Prediction models (Jack Daniels VDOT, Riegel) are based on scientific formulas but results may differ from actual performance. Always listen to your body.",
     "termsAvailabilityTitle": "Availability",
     "termsAvailabilityBody": "The service is provided as-is, without any guarantee of uptime or continuity.",
     "cookiesTitle": "Cookie Policy",
-    "cookiesIntro": "This policy explains how Running Calculator uses cookies and similar browser storage.",
+    "cookiesIntro": "This policy explains how PaceTool uses cookies and similar browser storage.",
     "cookiesWhatTitle": "What we store",
     "cookiesWhatBody": "We store a single item in localStorage under the key 'running-calculator:settings' containing your language, unit preference, and MAS value. This data never leaves your device.",
     "cookiesControlTitle": "Your control",
@@ -145,6 +297,35 @@
     "cookiesAnalyticsBody": "With your consent, we use Google Analytics 4 to measure audience anonymously (pages visited, session duration). IP anonymisation is enabled. This data is transmitted to Google LLC (USA) and is subject to Google's privacy policy. No advertising use is made of this data.",
     "cookiesNoTrackTitle": "Advertising",
     "cookiesNoTrackBody": "We do not use any advertising or retargeting cookies."
+  },
+  "rpeZones": {
+    "rpe1": { "name": "1 — Rest", "description": "No effort. At rest." },
+    "rpe2": { "name": "2 — Very easy", "description": "Very light effort. Can be maintained for hours." },
+    "rpe3": { "name": "3 — Easy", "description": "Light effort. Comfortable, easy breathing." },
+    "rpe4": { "name": "4 — Moderate", "description": "Somewhat easy. Breathing slightly heavier but comfortable." },
+    "rpe5": { "name": "5 — Moderate–Hard", "description": "Moderate effort. Conversation possible but requires focus." },
+    "rpe6": { "name": "6 — Hard", "description": "Getting hard. Short sentences only." },
+    "rpe7": { "name": "7 — Very Hard", "description": "Very hard. Only a few words possible." },
+    "rpe8": { "name": "8 — Extremely Hard", "description": "Extremely hard. Barely able to speak." },
+    "rpe9": { "name": "9 — Near Maximum", "description": "Near maximal effort. Almost impossible to continue." },
+    "rpe10": { "name": "10 — Maximum", "description": "Maximum effort. Cannot be maintained." }
+  },
+  "borgZones": {
+    "borg6": { "name": "6 — No exertion", "description": "No effort whatsoever. Complete rest." },
+    "borg7": { "name": "7 — Extremely light", "description": "Very gentle movement. Barely perceptible effort." },
+    "borg8": { "name": "8", "description": "Very light, effortless movement." },
+    "borg9": { "name": "9 — Very light", "description": "Easy walking at a slow pace. Very little effort." },
+    "borg10": { "name": "10", "description": "Light activity. Comfortable for a long time." },
+    "borg11": { "name": "11 — Light", "description": "Comfortable effort. Breathing slightly elevated." },
+    "borg12": { "name": "12", "description": "Moderate effort. Conversation still comfortable." },
+    "borg13": { "name": "13 — Somewhat hard", "description": "Vigorous effort. Somewhat hard, but can continue." },
+    "borg14": { "name": "14", "description": "Hard effort. Short sentences only." },
+    "borg15": { "name": "15 — Hard", "description": "Hard effort. Difficult to hold a conversation." },
+    "borg16": { "name": "16", "description": "Very hard effort. Only a few words possible." },
+    "borg17": { "name": "17 — Very hard", "description": "Very strenuous. Near your limit." },
+    "borg18": { "name": "18", "description": "Extremely hard. Very close to maximum." },
+    "borg19": { "name": "19 — Extremely hard", "description": "Extremely strenuous. Near absolute maximum." },
+    "borg20": { "name": "20 — Maximum", "description": "Maximal exertion. Absolute limit." }
   },
   "zones": {
     "zone1": {

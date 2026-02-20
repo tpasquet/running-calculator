@@ -5,7 +5,7 @@ import type { Language, Theme } from '../../store/settings'
 import type { Unit } from '../../utils/paceSpeed'
 import { PREDICTION_DISTANCES } from '../../utils/jackDaniels'
 import { parseTimeInput, formatTime } from '../../utils/splitTimes'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useT } from '../../i18n/useT'
 
 const LANGUAGES: { id: Language; label: string }[] = [
@@ -13,7 +13,13 @@ const LANGUAGES: { id: Language; label: string }[] = [
   { id: 'fr', label: 'Français' },
 ]
 
-export function Settings() {
+type LegalPage = 'legal' | 'privacy' | 'terms' | 'cookies' | 'credits'
+
+interface SettingsProps {
+  onNavigate: (page: LegalPage) => void
+}
+
+export function Settings({ onNavigate }: SettingsProps) {
   const t = useT()
   const { settings, updateSettings } = useSettingsContext()
 
@@ -74,6 +80,30 @@ export function Settings() {
   const refTimeSeconds = parseTimeInput(refTimeInput)
   const isRefSaved = !isRefTimeError && refTimeInput !== '' && !isNaN(refTimeSeconds) && refTimeSeconds > 0
 
+  // HR inputs
+  const [maxHrInput, setMaxHrInput] = useState(settings.maxHr !== null ? String(settings.maxHr) : '')
+  const [restingHrInput, setRestingHrInput] = useState(settings.restingHr !== null ? String(settings.restingHr) : '')
+
+  const handleMaxHrChange = useCallback((value: string) => {
+    setMaxHrInput(value)
+    const parsed = parseInt(value)
+    if (!isNaN(parsed) && parsed > 0) updateSettings({ maxHr: parsed })
+    else if (value === '') updateSettings({ maxHr: null })
+  }, [updateSettings])
+
+  const handleRestingHrChange = useCallback((value: string) => {
+    setRestingHrInput(value)
+    const parsed = parseInt(value)
+    if (!isNaN(parsed) && parsed > 0) updateSettings({ restingHr: parsed })
+    else if (value === '') updateSettings({ restingHr: null })
+  }, [updateSettings])
+
+  const maxHr = parseInt(maxHrInput)
+  const restingHr = parseInt(restingHrInput)
+  const isMaxHrError = maxHrInput !== '' && (isNaN(maxHr) || maxHr <= 0)
+  const isRestingHrError = restingHrInput !== '' && (isNaN(restingHr) || restingHr <= 0 || restingHr >= maxHr)
+  const isHrSaved = settings.maxHr !== null && settings.restingHr !== null && !isMaxHrError && !isRestingHrError
+
   return (
     <div className="settings">
       <header className="settings__header">
@@ -119,9 +149,34 @@ export function Settings() {
           placeholder={t('settings.refPerfTimePlaceholder')}
           hint={t('settings.refPerfTimeHint')}
           error={isRefTimeError}
+          inputMode="text"
         />
         {isRefSaved && (
           <p className="settings__saved">{t('settings.refPerfSaved', { distance: refDist.label, time: formatTime(refTimeSeconds) })}</p>
+        )}
+      </section>
+
+      {/* Fréquence cardiaque */}
+      <section className="settings__section">
+        <h2 className="settings__section-title">{t('settings.hrSection')}</h2>
+        <NumericInput
+          label={t('settings.hrMaxLabel')}
+          value={maxHrInput}
+          onChange={handleMaxHrChange}
+          placeholder={t('settings.hrMaxPlaceholder')}
+          hint={t('settings.hrMaxHint')}
+          error={isMaxHrError}
+        />
+        <NumericInput
+          label={t('settings.hrRestingLabel')}
+          value={restingHrInput}
+          onChange={handleRestingHrChange}
+          placeholder={t('settings.hrRestingPlaceholder')}
+          hint={t('settings.hrRestingHint')}
+          error={isRestingHrError}
+        />
+        {isHrSaved && (
+          <p className="settings__saved">{t('settings.hrSaved', { max: settings.maxHr!, resting: settings.restingHr! })}</p>
         )}
       </section>
 
@@ -171,6 +226,31 @@ export function Settings() {
             </button>
           ))}
         </div>
+      </section>
+
+      <section className="settings__section settings__about">
+        <h2 className="settings__section-title">{t('settings.aboutSection')}</h2>
+        <nav className="settings__about-links">
+          {([
+            ['legal',   t('settings.aboutLegal')],
+            ['privacy', t('settings.aboutPrivacy')],
+            ['terms',   t('settings.aboutTerms')],
+            ['cookies', t('settings.aboutCookies')],
+            ['credits', t('settings.aboutCredits')],
+          ] as [LegalPage, string][]).map(([page, label]) => (
+            <button
+              key={page}
+              type="button"
+              className="settings__about-link"
+              onClick={() => onNavigate(page)}
+            >
+              {label}
+              <svg className="settings__about-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          ))}
+        </nav>
       </section>
     </div>
   )

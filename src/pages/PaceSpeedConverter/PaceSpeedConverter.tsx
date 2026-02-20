@@ -58,6 +58,7 @@ export function PaceSpeedConverter() {
           placeholder={t('paceSpeed.pacePlaceholder')}
           hint={t('paceSpeed.paceHint')}
           error={isPaceError}
+          inputMode="text"
         />
         <ResultDisplay
           label={t('paceSpeed.speedLabel')}
